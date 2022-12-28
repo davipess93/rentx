@@ -53,7 +53,7 @@
     "import-helpers/order-imports": [
       "warn",
       {
-        "newlinesBetween": "never",
+        "newlinesBetween": "always",
         "groups": [
           "module",
           "/^@shared/",
