@@ -14,7 +14,7 @@ class CategoriesRepository implements ICategoriesRepository {
   }
 
   public static getInstance(): CategoriesRepository {
-    if(!CategoriesRepository.INSTANCE) {
+    if (!CategoriesRepository.INSTANCE) {
       CategoriesRepository.INSTANCE = new CategoriesRepository();
     }
     return CategoriesRepository.INSTANCE;
