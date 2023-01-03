@@ -4,7 +4,7 @@ import { v4 as uuidV4 } from "uuid";
 @Entity("users")
 class User {
   @PrimaryColumn()
-  id?: string;
+  id: string;
 
   @Column()
   name: string;
@@ -14,6 +14,9 @@ class User {
 
   @Column()
   password: string;
+
+  @Column()
+  email: string;
 
   @Column()
   driver_license: string;
