@@ -7,11 +7,11 @@ async function create() {
   const connection = await createConnection("localhost");
 
   const id = uuidV4();
-  const passowrd = await hash("admin", 8);
+  const password = await hash("admin", 8);
 
   await connection.query(
     `INSERT INTO users(id, name, email, password, "isAdmin", created_at, driver_license)
-      values('${id}', 'admin', 'admin@rentx.com.br', '${passowrd}', true, 'now()', 'XXXXXX')
+      values('${id}', 'admin', 'admin@rentx.com.br', '${password}', true, 'now()', 'XXXXXX')
     `
   );
 
