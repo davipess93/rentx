@@ -27,7 +27,6 @@ class S3StorageProvider implements IStorageProvider {
       .putObject({
         Bucket: `${process.env.AWS_BUCKET}/${folder}`,
         Key: file,
-        ACL: "public-read",
         Body: fileContent,
         ContentType,
       })
